@@ -1,0 +1,675 @@
+html {
+  /* 1 */
+  font-family: 'Abel', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  background: #fff;
+  color: #3f3f3f;
+}
+/*
+ * Style
+ */
+a,
+.uk-link {
+  color: #253c93;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+.uk-link:hover {
+  color: #1c2c6c;
+  text-decoration: underline;
+}
+/* Headings
+ ========================================================================== */
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6 {
+  margin: 0 0 20px 0;
+  font-family:'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: 300;
+  color: #3f3f3f;
+  text-transform: uppercase;
+}
+/*
+ * Sizes
+ */
+h1,
+.uk-h1 {
+  font-size: 2.625rem;
+  line-height: 1.2;
+}
+h2,
+.uk-h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+h3,
+.uk-h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+h4,
+.uk-h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+h5,
+.uk-h5 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+h6,
+.uk-h6 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+/* Horizontal rules
+ ========================================================================== */
+/*
+ * 1. Add the correct box sizing and height in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ * 3. Style
+ */
+hr,
+.uk-hr {
+  /* 1 */
+  box-sizing: content-box;
+  height: 0;
+  /* 2 */
+  overflow: visible;
+  /* 3 */
+  margin: 0 0 20px 0;
+  border: 0;
+  border-top: 1px solid #ebe94a;
+}
+/* Blockquotes
+ ========================================================================== */
+.relative {
+  position: relative;
+  }
+blockquote {
+  margin: 0 0 20px 0;
+}
+blockquote:before {
+}
+.largeQuote {
+  font-size:260px;
+  line-height:20px;
+  color:#ebe94a;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.3;
+}
+.smallQuote {
+  font-size:90px;
+  line-height:20px;
+  color:#ebe94a;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  position: absolute;
+  bottom: -20px;
+  right:0px;
+  opacity: 0.3;
+}
+.smallQuote:first-child {
+  top: 20px;
+  left:20px;
+}
+.largeQuote:first-child {
+  /*left:0;
+  top:0px;*/
+}
+.testimonial-image {
+  width:100%;
+  max-width:175px;
+}
+* Content
+*/
+blockquote p:last-of-type {
+ margin-bottom: 0;
+}
+blockquote footer {
+ margin-top: 10px;
+ font-size: 0.875rem;
+ line-height: 1.5;
+ color: #666;
+}
+blockquote footer::before {
+ content: "— ";
+}
+/* ========================================================================
+   Component: Heading
+ ========================================================================== */
+/* Primary
+ ========================================================================== */
+.uk-heading-primary {
+  font-size: 2.625rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  margin-bottom:70px;
+}
+#RecentWork:before {
+  content:"Recent Work";
+  color:#ebe94a;
+  opacity: 0.3;
+  position:absolute;
+  bottom:0;
+  left:100px;
+  font-size:6rem;
+  z-index: -100;
+}
+#project-list:before {
+  content:"Projects";
+  color:#ebe94a;
+  opacity: 0.3;
+  position:absolute;
+  bottom:0;
+  left:100px;
+  font-size:6rem;
+  z-index: -100;
+}
+#about:before {
+  content:"About";
+  color:#ebe94a;
+  opacity: 0.3;
+  position:absolute;
+  bottom:0;
+  left:100px;
+  font-size:6rem;
+  z-index: -100;
+}
+#words:before {
+  content:"Nice words";
+  color:#ebe94a;
+  opacity: 0.3;
+  position:absolute;
+  bottom:0;
+  left:100px;
+  font-size:6rem;
+  z-index: -1;
+}
+#prices:before {
+  content:"Prices";
+  color:#ebe94a;
+  opacity: 0.3;
+  position:absolute;
+  bottom:0;
+  left:100px;
+  font-size:6rem;
+  z-index: -1;
+}
+#chat:before {
+  content:"Let's Chat";
+  color:#ebe94a;
+  opacity: 0.3;
+  position:absolute;
+  bottom:0;
+  left:100px;
+  font-size:6rem;
+  z-index: -1;
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  .uk-heading-primary {
+    font-size: 3.75rem;
+    line-height: 1.1;
+    position: relative;
+  }
+}
+/* Phone landscape and smaller */
+@media (max-width: 959px) {
+	#RecentWork:before, #about:before,   #words:before, #project-list:before, #prices:before, #chat:before {
+		font-size:3.5rem;
+	}
+	#about:before, #prices:before {
+		left:60px;
+	}
+}
+.yellow {
+  color:#ebe94a;
+}
+/* Hero
+ ========================================================================== */
+.uk-heading-hero {
+  font-size: 3rem;
+  line-height: 1;
+  text-align: right;
+  color:#3f3f3f;
+  opacity: 0.1;
+  text-transform: uppercase;
+}
+.uk-heading-sub {
+  font-size:2rem;
+  line-height: 1.1;
+  text-align:right;
+  color: #ebe94a;
+  margin-top:20px;
+}
+.project-link > a {
+  color:#3f3f3f;
+}
+/* Phone landscape and bigger */
+@media screen and (min-width: 640px) {
+
+  .uk-heading-hero {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .uk-heading-sub {
+    font-size:3rem;
+  }
+}
+/* Divider
+ ========================================================================== */
+.uk-heading-divider {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.uk-input {
+  border:0px;
+  border-bottom:2px solid #939393;
+}
+/*
+ * Single-line
+ * 1. Allow any element to look like an `input` or `select` element
+ * 2. Make sure line-height is not larger than height
+ *    Also needed to center the text vertically
+ */
+.uk-input,
+.uk-select:not([multiple]):not([size]) {
+  height: 40px;
+  vertical-align: middle;
+  /* 1 */
+  display: inline-block;
+}
+/* 2 */
+.uk-input:not(input),
+.uk-select:not(select) {
+  line-height: 38px;
+}
+/*
+ * Multi-line
+ */
+.uk-select[multiple],
+.uk-select[size],
+.uk-textarea {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  vertical-align: top;
+}
+/* Focus */
+input
+ {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border: 0;
+  /*border-bottom: 2px solid #253c93;*/
+}
+.uk-textarea:focus {
+  background-color: transparent !important;
+}
+.textarea-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus{
+	background- color: transparent !important;
+}
+.textarea-content {
+    background: linear-gradient(transparent, transparent 48px, #939393 48px);
+    background-size: 50px 50px;
+}
+.textarea-content:focus {
+    background: linear-gradient(transparent, transparent 48px, #939393 48px) !important;
+    background-size: 50px 50px !important;
+}
+.uk-textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    box-sizing: border-box;
+    z-index: 1;
+    resize: none;
+}
+#contact-form {
+  position: relative;
+}
+.uk-input.error {
+    border-bottom: #b94a48 2px solid;
+}
+.error {
+  border-bottom: #b94a48 ;
+  margin-bottom:10px;
+}
+.form-error {
+  color: #b94a48;
+}
+.textarea-content.has-error {
+    background: linear-gradient(transparent, transparent 48px, #b94a48 48px);
+    background-size: 50px 50px;
+}
+
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert h4 {
+    margin-top: 0;
+    color: inherit
+}
+
+.alert .alert-link {
+    font-weight: 700
+}
+
+.alert>p,
+.alert>ul {
+    margin-bottom: 0
+}
+
+.alert>p+p {
+    margin-top: 5px
+}
+
+.alert-dismissable,
+.alert-dismissible {
+    padding-right: 35px
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3
+}
+
+.alert-success .alert-link {
+    color: #2b542c
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
+
+.alert-info hr {
+    border-top-color: #a6e1ec
+}
+
+.alert-info .alert-link {
+    color: #245269
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc
+}
+
+.alert-warning hr {
+    border-top-color: #f7e1b5
+}
+
+.alert-warning .alert-link {
+    color: #66512c
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1
+}
+
+.alert-danger hr {
+    border-top-color: #e4b9c0
+}
+
+.alert-danger .alert-link {
+    color: #843534
+}
+  /* Style modifiers
+   ========================================================================== */
+  /*
+   * Default
+   */
+  .uk-button-default {
+    background-color: #ebe94a;
+    color: #000;
+    border: 0px solid #e5e5e5;
+    margin-bottom:10px;
+    letter-spacing: 0.1rem;
+    padding: 10px 30px;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Hover + Focus */
+  .uk-button-default:hover,
+  .uk-button-default:focus {
+    background-color: #cfcd43;
+    color: #000;
+    border: 0px solid #e5e5e5;
+  }
+  /* OnClick + Active */
+  .uk-button-default:active,
+  .uk-button-default.uk-active {
+    background-color: transparent;
+    color: #3f3f3f;
+    border-color: #999999;
+  }
+  /* Size modifier
+   ========================================================================== */
+  #offcanvas-nav-primary > div > ul > li > a {
+    font-size:20px !important;
+    margin-top:20px;
+  }
+  #offcanvas-nav-primary > div > ul > li > a:hover {
+  opacity: 0.7;
+  }
+	.uk-text-small {
+	  font-size: 0.875rem;
+	  line-height: 1.5;
+	}
+	.uk-text-large {
+	  font-size: 1.5rem;
+	  line-height: 1.5;
+	}
+	/* Nav bar
+	 ========================================================================== */
+	.uk-nav-default .uk-nav-divider {
+	  border-top: 1px solid #e5e5e5;
+	}
+	/*
+	 * Items
+	 * 1. Center content vertically and horizontally
+	 * 2. Dimensions
+	 * 3. Style
+	 * 4. Required for `a`
+	 */
+	.uk-navbar-nav > li > a,
+	.uk-navbar-item,
+	.uk-navbar-toggle {
+	  /* 1 */
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  -ms-flex-pack: center;
+	  -webkit-justify-content: center;
+	  justify-content: center;
+	  -ms-flex-align: center;
+	  -webkit-align-items: center;
+	  align-items: center;
+	  /* 2 */
+	  box-sizing: border-box;
+	  padding: 20px 15px 0px;
+	  /* 3 */
+	  font-size: 1.2rem;
+	  font-family:'Yanone Kaffeesatz', Arial, sans-serif;
+	  /* 4 */
+	  text-decoration: none;
+    height: auto;
+	}
+	.uk-navbar-nav > li > a {
+	  color: #999;
+	  text-transform: uppercase;
+	  -webkit-transition: 0.3s ease-in-out;
+	  transition: 0.3s ease-in-out;
+	  -webkit-transition-property: color, background-color, border;
+	  transition-property: color, background-color, border;
+	}
+
+	.uk-navbar-nav > li > a {
+	  position: relative;
+	}
+	.uk-navbar-nav > li > a:before {
+	  content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  top: 0;
+	  left: 0;
+	  background-color: #ebe94a;
+	  visibility: hidden;
+	  -webkit-transform: scaleX(0);
+	  transform: scaleX(0);
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+	.uk-navbar-nav > li > a:hover:before {
+	  visibility: visible;
+	  -webkit-transform: scaleX(1);
+	  transform: scaleX(1);
+	}
+  .uk-navbar-center {
+    top:20% !important;
+  }
+	/* Bar
+	 ========================================================================== */
+	/*
+	 * 1. Set position
+	 * 2. Size and style
+	 * 3. Allow scrolling
+	 * 4. Transform
+	 */
+	.uk-offcanvas-bar {
+	  /* 1 */
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  /* 2 */
+	  box-sizing: border-box;
+	  width: 270px;
+	  padding: 20px 20px;
+	  background: #3f3f3f;
+	  /* 3 */
+	  overflow-y: auto;
+	  -webkit-overflow-scrolling: touch;
+	  /* 4 */
+	  -webkit-transform: translateX(-100%);
+	  transform: translateX(-100%);
+	}
+	/* ========================================================================
+	   Component: Cover
+	 ========================================================================== */
+	/*
+	 * Works with iframes and embedded content
+	 * 1. Reset responsiveness for embedded content
+	 * 2. Center object
+	 * Note: Percent values on the `top` property only works if this element
+	 *       is absolute positioned or if the container has a height
+	 */
+	.uk-cover {
+	  /* 1 */
+	  max-width: none;
+	  /* 2 */
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	.bg-header {
+	  overflow: hidden;
+	}
+	.bg-header:before {
+	  content: "";
+	   position: absolute;
+	   width: 120%;
+	   height: 114%;
+	   top: -30%;
+	   left: -10%;
+	   z-index: -1;
+	   transform: rotate(3deg);
+	  background-color:#f1f3f4;
+	}
+	/*.bg-header-sub:before {
+	  height:100%;
+	}*/
+	/* Logo
+	 ========================================================================== */
+	/*
+	 * 1. Required for `a`
+	 */
+	.uk-logo {
+	  font-size: 1.5rem;
+	  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	  color: #666;
+	  /* 1 */
+	  text-decoration: none;
+	  max-width:100px;
+    padding:0px;
+	}
+  .no-decoration {
+    text-decoration: none !important;
+  }
+  .no-decoration:hover {
+    opacity:0.7;
+  }
+  .smaller {
+    width:100%;
+    max-width:280px !important;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- meta data-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- favicon-->
+      <link rel="apple-touch-icon" sizes="180x180" href="../img/fav/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../img/fav/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../img/fav/favicon-16x16.png">
+      <link rel="manifest" href="../img/fav/manifest.json">
+      <link rel="mask-icon" href="../img/fav/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="theme-color" content="#ffffff">
+      <!--font-->
+      <link href="https://fonts.googleapis.com/css?family=Abel|Yanone+Kaffeesatz:300" rel="stylesheet">
+      <!--css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+      <link rel="stylesheet" href="../css/main.css" />
+      <!--title-->
+      <title>32Pixels | Projects | Rewards Bag</title>
+   </head>
+   <body>
+      <div class="uk-position-relative bg-header bg-header-sub">
+         <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+            <!--navigation-->
+            <div class="uk-position-top uk-container uk-margin-small-top">
+               <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                  <div class="uk-navbar-left">
+                     <a href="../index.html" class="uk-navbar-item uk-logo"><img src="../img/logo.png" alt="Logo"></a>
+                  </div>
+                  <div class="uk-navbar-center uk-visible@s">
+                     <ul class="uk-navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="uk-active"><a href="index.html">Projects</a></li>
+                        <li><a href="../prices/index.html">Prices</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                     </ul>
+                  </div>
+                  <!--mobile-nav-->
+                  <div class="uk-hidden@s uk-width-expand">
+                     <div class="uk-navbar-right uk-align-right">
+                        <a href="#" class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon>
+                        </a>
+                     </div>
+                     <div class="uk-offcanvas-content">
+                        <div id="offcanvas-nav-primary" uk-offcanvas="overlay:tue">
+                           <div class="uk-offcanvas-bar" uk-flex uk-flex-column>
+                              <button class="uk-offcanvas-close" type="button" uk-close></button>
+                              <ul class="uk-nav">
+                                 <li><a href="../index.html">Home</a></li>
+                                 <li class="uk-active"><a href="index.html">Projects</a></li>
+                                 <li><a href="../prices/index.html">Prices</a></li>
+                                 <li><a href="../contact/index.html">Contact</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /mobile nav-->
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="uk-container">
+         <div class="uk-margin-medium-top">
+            <h2 class="uk-heading-primary">Rewards Bag</h2>
+         </div>
+         <div class="uk-margin-large-top" uk-grid>
+            <div class="uk-width-1-3@s">
+               <img src="../img/rewards-bag.jpg" alt="Rewards Bag" class="uk-align-center">
+               <h3>Project Summary</h3>
+               <p>Client: Amplify Media Partners Ltd
+                  <br/>Finished Project: Update Wordpress website to new design, implement animations, SEO best practice
+                  <br/>Date: July 2019
+               </p>
+            </div>
+            <div class="uk-width-2-3@s">
+               <h3>The Brief</h3>
+               <p class="uk-margin-medium-top">
+                  The client had a new design created for their website and so they needed their current site updated to reflect this new design. 
+               </p>
+               <p>The site needs to remain in the same format to enable to client to continue easily maintaining and editing the CMS.</p>
+               <p>As the site is to be accessed on a range of screen sizes and by both English and German speaking users, the site needs to be responsive and multi-language</p>
+               
+               <h3>The Project</h3>
+               <p class="uk-margin-medium-top">
+                 I maintained the structure of the client's current Wordpress website but created new custom modules for the new sections required. This would allow the client to continue maintaining the site as they had been, with minimal training required for the new sections. 
+               </p>
+               <p>To add the animations, I used a combination of CSS3 animations, Javascript and SVG animations. I adopted a different approach for each animation depending on the interaction, play time and animation required.</p>
+               <p>The site is fully responsive and uses can switch between German and English when using the site.</p>        
+            </div>
+         </div>
+<!--          <div class="uk-child-width-1-3@s uk-child-width-auto uk-flex-center uk-grid-match" uk-grid uk-lightbox="animation: fade">
+           
+            <div>
+               <a class="uk-inline no-decoration" href="../img/rewards-bag/meet-the-team-lg.jpg">
+                  <div class="uk-card uk-card-default uk-card-small">
+                     <img class="lazy" data-src="../img/rewards-bag/meet-the-team-lg.jpg" alt="Meet the team">
+                  </div>
+                  <h5 class="uk-text-center uk-margin-top">Header animation</h5>
+               </a>
+            </div>
+            <div>
+               <a class="uk-inline no-decoration" href="../img/rewards-bag/info-lg.jpg">
+                  <div class="uk-card uk-card-default uk-card-small">
+                     <img class="lazy" data-src="../img/rewards-bag/info-lg.jpg" alt="Information for guests">
+                  </div>
+                  <h5 class="uk-text-center uk-margin-top">Roll over section animation</h5>
+               </a>
+            </div>
+            <div>
+               <a class="uk-inline no-decoration" href="../img/rewards-bag/rsvp-lg.jpg">
+                  <div class="uk-card uk-card-default uk-card-small">
+                     <img class="lazy" data-src="../img/rewards-bag/rsvp-lg.jpg" alt="RSVP form">
+                  </div>
+                  <h5 class="uk-text-center uk-margin-top">Click to view content</h5>
+               </a>
+            </div>
+         </div> -->
+         <div class="uk-margin-xlarge-top uk-text-center">
+            <a href="https://rewardsbag.com/" class="uk-button uk-button-default" target="_blank">Visit Website</a>
+         </div>
+         <div class="uk-margin-xlarge-top" uk-grid>
+            <div class="uk-width-1-2">
+               <!-- <h3 class="project-link"><a href="#" target="_self"><span class="yellow uk-padding-small-right">&#60;</span> View previous project</a></h3> -->
+            </div>
+            <div class="uk-width-1-2">
+               <h3 class="project-link uk-align-right"><a href="ePerformance.html" target="_self">View next project <span class="yellow uk-padding-small-left">&#62;</span> </a></h3>
+            </div>
+         </div>
+        <footer class="uk-margin-medium-top uk-margin-medium-bottom uk-text-center">
+         <a href="" uk-totop uk-scroll></a>
+         <p class="uk-text-small">&copy; 32Pixels</p>
+         <p class="uk-text-small">
+            <a href="../privacy-policy.html" target="_self">Privacy Policy</a>
+            <a class="uk-margin-left" href="../contact/index.html" target="_self">Contact</a>
+         </p>
+        </footer>
+      </div>
+      <!--scripts-->
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.5/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="../js/lazy.js"></script>
+   </body>
+</html>
